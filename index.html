@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>دروسي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #000000;
+      padding: 20px;
+      color: #ffffff;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgb(255, 255, 255);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(179, 146, 146, 0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      max-height: 150px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .card a {
+      color: #1e40af;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 ملفات كلية التربية شعبة لغة عربية فرقة أولى جامعة أسيوط</h1>
+    <p>هذا الموقع مُبرمج لتجميع ملفات المواد التي تخص الكلية في مكان واحد كي يسهُل على الطالب إجادها.
+     <p> </p> 
+    ولا تنسونا من صالح الدعاء.
+    </p>
+    <p>المبرمج: يوسف أحمد صالح</p>
+  </header>
+
+  <div class="grid">
+    <!-- ابدأ بإضافة ملفاتك هنا -->
+
+    <!-- مثال لملف PDF -->
+    <div class="card">
+      <a href="files/التحديات التي تواجه اللغة العربية.pdf" target="_blank">📄 بحث عن التحديات التي تواجه اللغة العربية</a>
+    </div>
+
+    <!-- مثال لصورة -->
+    <div class="card">
+      <a href="files/تقبلي يا ملكة.PNG" target="_blank">
+        <img src="files/تقبلي يا ملكة.PNG" alt="تقبلي يا ملكة.PNG">
+        <div>🖼️ تقبلي يا ملكة</div>
+      </a>
+    </div>
+
+    <!-- يمكنكِ إضافة المزيد هنا لاحقًا -->
+
+  </div>
+</body>
+</html>
