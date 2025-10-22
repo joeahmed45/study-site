@@ -17,58 +17,57 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px;
     }
     .card {
-      background: rgb(255, 255, 255);
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(179, 146, 146, 0.1);
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
       text-align: center;
+      transition: transform 0.2s;
     }
-    .card img {
-      max-width: 100%;
-      max-height: 150px;
-      border-radius: 6px;
-      margin-bottom: 10px;
+    .card:hover {
+      transform: translateY(-5px);
+      background: #333;
     }
     .card a {
-      color: #1e40af;
+      color: #4fc3f7;
       text-decoration: none;
       font-weight: bold;
+      font-size: 18px;
+      display: block;
+    }
+    .icon {
+      font-size: 40px;
+      margin-bottom: 12px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>📚 ملفات كلية التربية شعبة لغة عربية فرقة أولى جامعة أسيوط</h1>
-    <p>هذا الموقع مُبَرمج لتجميع ملفات المواد التي تخص الكلية في مكان واحد كي يسهُل على الطالب إجادها.
-     <p> </p> 
-    ولا تنسونا من صالح الدعاء.
-    </p>
+    <p>هذا الموقع مُبَرمج لتجميع ملفات المواد التي تخص الكلية في مكان واحد كي يسهُل على الطالب إجادها.<br>
+    ولا تنسونا من صالح الدعاء.</p>
     <p>مبرمج هذا الموقع: يوسف أحمد صالح</p>
   </header>
 
   <div class="grid">
-    <!-- ابدأ بإضافة ملفاتك هنا -->
-
-    <!-- مثال لملف PDF -->
-    
     <div class="card">
-      <a href="files/جدول المحاضرات الجديد جدًا ١ عام.pdf" target="_blank">📄 جدول المحاضرات الجديد جدًا ١ عام </a>
+      <div class="icon">📁</div>
+      <a href="pdf.html">ملفات الـ PDF</a>
     </div>
 
-    <!-- مثال لصورة -->
     <div class="card">
-      <a href="files/جدول الكلية الحديث.PNG" target="_blank">
-        <img src="files/جدول الكلية الحديث.PNG" alt="جدول الكلية الحديث.PNG">
-        <div>🖼️ الجدول</div>
-      </a>
+      <div class="icon">🖼️</div>
+      <a href="images.html">الصور</a>
     </div>
 
-    <!-- يمكنكِ إضافة المزيد هنا لاحقًا -->
-
+    <div class="card">
+      <div class="icon">🎥</div>
+      <a href="videos.html">الفيديوهات</a>
+    </div>
   </div>
 </body>
 </html>
