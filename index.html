@@ -5,67 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>موقع ملفات الكلية</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #000000;
-      padding: 20px;
-      color: #ffffff;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
     header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: rgba(30, 30, 30, 0.8);
+      border-radius: 16px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #4fc3f7;
+    }
+
+    header p {
+      margin: 8px 0;
+      font-size: 1.05rem;
+    }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
+
     .card {
-      background: #222;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      background: #1a1a1a;
+      padding: 25px 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
       text-align: center;
-      transition: transform 0.2s;
+      transition: all 0.3s ease;
+      border: 1px solid #333;
     }
+
     .card:hover {
-      transform: translateY(-5px);
-      background: #333;
+      transform: translateY(-6px);
+      background: #222;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+      border-color: #4fc3f7;
     }
+
     .card a {
       color: #4fc3f7;
       text-decoration: none;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 1.2rem;
       display: block;
+      margin-top: 12px;
     }
+
     .icon {
-      font-size: 40px;
-      margin-bottom: 12px;
+      font-size: 48px;
+      margin-bottom: 14px;
+      display: block;
+      color: #64b5f6;
+    }
+
+    /* دعم الهواتف الصغيرة */
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>📚 ملفات كلية التربية شعبة لغة عربية فرقة أولى جامعة أسيوط</h1>
-    <p>هذا الموقع مُبَرمج لتجميع ملفات المواد التي تخص الكلية في مكان واحد كي يسهُل على الطالب إجادها.<br>
-    ولا تنسونا من صالح الدعاء.</p>
-    <p>مبرمج هذا الموقع: يوسف أحمد صالح</p>
+    <p>هذا الموقع مُبرمج لتجميع ملفات المواد التي تخص الكلية في مكان واحد كي يسهل على الطالب إيجادها.</p>
+    <p>ولا تنسونا من صالح الدعاء 🤲</p>
+    <p><strong>مبرمج هذا الموقع:</strong> يوسف أحمد صالح</p>
   </header>
 
   <div class="grid">
     <div class="card">
-      <div class="icon">📁</div>
+      <span class="icon">📁</span>
       <a href="pdf.html">ملفات الـ PDF</a>
     </div>
 
     <div class="card">
-      <div class="icon">🖼️</div>
+      <span class="icon">🖼️</span>
       <a href="images.html">الصور</a>
     </div>
 
     <div class="card">
-      <div class="icon">🎥</div>
+      <span class="icon">🎥</span>
       <a href="videos.html">الفيديوهات</a>
     </div>
   </div>
